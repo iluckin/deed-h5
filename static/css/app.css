@@ -3,7 +3,7 @@ body::-webkit-scrollbar {
     display: none !important;
 }
 body {
-    background-color: rgba(232, 233, 232, 0.47);
+    background-color: rgba(232, 233, 232, 0.56);
     /*background-image: linear-gradient(180deg,#ec454f, rgba(255, 74, 137, 0.25));*/
     /*background-repeat: no-repeat;*/
     /*background-image: -webkit-gradient(linear,left top,left bottom,from(#f44881),to(#ec454f));*/
@@ -66,5 +66,15 @@ body {
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     overflow: hidden;
-    min-height: calc(100vw + 30px);
+    min-height: calc(100vh - 450px);
+}
+.phone-call {
+    background-color: white;
+    position: fixed;
+    width: 52px;
+    height: 55px;
+    border-radius: 0px 0px 30px 30px;
+    top: -1px;
+    right: 55px;
+    padding: 5px;
 }
