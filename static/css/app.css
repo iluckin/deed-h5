@@ -1,14 +1,24 @@
+html  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: #fbfbfd;
+    background-image: url(/static/images/startup_shap.png);
+    background-position: top;
+    background-repeat: repeat-x;
+}
 
+body {
+    /*background-blend-mode: overlay;*/
+    /*background-image: url(/static/images/startup_shap.png);*/
+    /*background-repeat: repeat-x;*/
+    /*background-position: top;*/
+    background-color: rgba(0,0,0,0);
+}
 body::-webkit-scrollbar {
     display: none !important;
 }
-body {
-    background-color: rgba(232, 233, 232, 0.56);
-    /*background-image: linear-gradient(180deg,#ec454f, rgba(255, 74, 137, 0.25));*/
-    /*background-repeat: no-repeat;*/
-    /*background-image: -webkit-gradient(linear,left top,left bottom,from(#f44881),to(#ec454f));*/
-}
-
 .carousel-indicators .active {
     background-color: #ff501f;
     border-radius: 10px;
@@ -25,9 +35,13 @@ body {
 }
 
 .shadow {
-    box-shadow: 0px 0px 6px 0px rgba(255,255,250,0.49);
-    -webkit-box-shadow: 0px 0px 6px 0px rgba(255,255,250,0.49);
-    -moz-box-shadow: 0px 0px 6px 0px rgba(255,255,250,0.49);
+    border-radius: .5rem;
+    display: block;
+    -webkit-box-shadow: 0 4px 25px 0 rgba(0,0,0,.1);
+    box-shadow: 0 4px 25px 0 rgba(0,0,0,.1);
+    position: relative;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 .display-5 {
@@ -61,20 +75,21 @@ body {
 }
 
 .service-container {
-    width: 100%;
-    background-color: white;
+    background-color: #ffffff;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     overflow: hidden;
-    min-height: calc(100vh - 450px);
+    min-height: calc(100vh - 420px);
+    padding-left: 18px;
+    padding-right: 18px;
 }
 .phone-call {
     background-color: white;
     position: fixed;
-    width: 52px;
-    height: 55px;
-    border-radius: 0px 0px 30px 30px;
-    top: -1px;
-    right: 55px;
+    width: 70px;
+    height: 52px;
+    border-radius: 30px 0px 0px 30px;
+    top: 160px;
+    right: -1px;
     padding: 5px;
 }
